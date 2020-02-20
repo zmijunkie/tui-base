@@ -89,7 +89,7 @@ drawTui ts =
 -- str :: String -> Widget n
 drawPath :: FilePath -> POC -> Widget n 
 drawPath b poc = 
-    (if null b 
+    (if b == "True" 
         then forceAttr "selected" 
         else id) $
     case poc of
